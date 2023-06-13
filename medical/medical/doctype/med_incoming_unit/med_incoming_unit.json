@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:title",
  "creation": "2023-06-13 00:55:51.091475",
@@ -22,7 +23,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-13 21:01:18.143381",
+ "modified": "2023-06-13 22:03:11.642374",
  "modified_by": "Administrator",
  "module": "Medical",
  "name": "Med Incoming Unit",

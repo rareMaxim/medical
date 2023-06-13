@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:title",
  "creation": "2023-06-13 00:54:32.393026",
@@ -9,10 +10,13 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
-  "internal_name"
+  "internal_name",
+  "unit",
+  "coast"
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "title",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -21,15 +25,31 @@
    "unique": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "internal_name",
    "fieldtype": "Data",
-   "label": "\u041c\u041d\u041d",
-   "reqd": 1
+   "in_list_view": 1,
+   "label": "\u041c\u041d\u041d"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "coast",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0411\u0430\u0437\u043e\u0432\u0430 \u0446\u0456\u043d\u0430"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0424\u043e\u0440\u043c\u0430 \u0432\u0438\u043f\u0443\u0441\u043a\u0443",
+   "options": "Med Incoming Unit"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-13 21:01:09.689623",
+ "modified": "2023-06-13 21:57:58.113998",
  "modified_by": "Administrator",
  "module": "Medical",
  "name": "Med Incoming Name",
