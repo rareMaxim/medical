@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-13 00:26:05.771344",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_wjdk",
+  "provider",
+  "column_break_ipcu",
+  "reciver",
+  "section_break_iyjg",
+  "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442__\u043d\u0430\u043a\u043b\u0430\u0434\u043a\u0430_column",
+  "doc_number",
+  "doc_data",
+  "\u043f\u0456\u0434\u0441\u0442\u0430\u0432\u0430__\u0434\u043e\u0433\u043e\u0432\u0456\u0440_column",
+  "contract_name",
+  "contract_number",
+  "contract_date",
+  "section_break_tmze",
+  "transfer_by",
+  "section_break_fziq",
+  "incoming"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0414\u0430\u0442\u0430"
+  },
+  {
+   "fieldname": "column_break_wjdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u041f\u043e\u0441\u0442\u0430\u0447\u0430\u043b\u044c\u043d\u0438\u043a",
+   "options": "Med Enterprise"
+  },
+  {
+   "fieldname": "column_break_ipcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reciver",
+   "fieldtype": "Link",
+   "label": "\u041e\u0442\u0440\u0438\u043c\u0443\u0432\u0430\u0447",
+   "options": "Med Enterprise"
+  },
+  {
+   "fieldname": "section_break_iyjg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442__\u043d\u0430\u043a\u043b\u0430\u0434\u043a\u0430_column",
+   "fieldtype": "Column Break",
+   "label": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442 / \u041d\u0430\u043a\u043b\u0430\u0434\u043a\u0430"
+  },
+  {
+   "fieldname": "doc_number",
+   "fieldtype": "Data",
+   "label": "\u041d\u043e\u043c\u0435\u0440"
+  },
+  {
+   "fieldname": "doc_data",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430"
+  },
+  {
+   "fieldname": "\u043f\u0456\u0434\u0441\u0442\u0430\u0432\u0430__\u0434\u043e\u0433\u043e\u0432\u0456\u0440_column",
+   "fieldtype": "Column Break",
+   "label": "\u041f\u0456\u0434\u0441\u0442\u0430\u0432\u0430 / \u0414\u043e\u0433\u043e\u0432\u0456\u0440"
+  },
+  {
+   "fieldname": "contract_name",
+   "fieldtype": "Data",
+   "label": "\u041d\u0430\u0437\u0432\u0430"
+  },
+  {
+   "fieldname": "contract_number",
+   "fieldtype": "Data",
+   "label": "\u041d\u043e\u043c\u0435\u0440"
+  },
+  {
+   "fieldname": "contract_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430"
+  },
+  {
+   "fieldname": "section_break_tmze",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u041c\u0412\u041e - \u041c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u044c\u043d\u043e-\u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0430 \u043e\u0441\u043e\u0431\u0430",
+   "fieldname": "transfer_by",
+   "fieldtype": "Data",
+   "label": "\u041c\u0412\u041e / \u041f\u0435\u0440\u0435\u0434\u0430\u0432"
+  },
+  {
+   "fieldname": "section_break_fziq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "incoming",
+   "fieldtype": "Table",
+   "label": "\u041f\u0435\u0440\u0435\u043b\u0456\u043a",
+   "options": "Med Incoming Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-13 21:00:29.714641",
+ "modified_by": "Administrator",
+ "module": "Medical",
+ "name": "Med Incoming",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-13 00:45:16.660251",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "inter_name",
+  "unit",
+  "count",
+  "coast",
+  "sum",
+  "vat",
+  "total"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u041d\u0430\u0437\u0432\u0430",
+   "options": "Med Incoming Name",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "description": "\u041c\u0456\u0436\u043d\u0430\u0440\u043e\u0434\u043d\u0430 \u043d\u0430\u0437\u0432\u0430",
+   "fetch_from": "title.internal_name",
+   "fieldname": "inter_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u041c\u041d\u041d"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u041e\u0434. \u0432\u0438\u043c\u0456\u0440\u0443",
+   "options": "Med Incoming Unit"
+  },
+  {
+   "columns": 1,
+   "fieldname": "count",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u041a\u0456\u043b-\u0442\u044c"
+  },
+  {
+   "columns": 1,
+   "fieldname": "coast",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0426\u0456\u043d\u0430"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sum",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0421\u0443\u043c\u0430",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "vat",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u041f\u0414\u0412"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0412\u0441\u044c\u043e\u0433\u043e",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-13 21:01:00.263409",
+ "modified_by": "Administrator",
+ "module": "Medical",
+ "name": "Med Incoming Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
