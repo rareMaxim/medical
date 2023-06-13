@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include medical *.css
+recursive-include medical *.csv
+recursive-include medical *.html
+recursive-include medical *.ico
+recursive-include medical *.js
+recursive-include medical *.json
+recursive-include medical *.md
+recursive-include medical *.png
+recursive-include medical *.py
+recursive-include medical *.svg
+recursive-include medical *.txt
+recursive-exclude medical *.pyc
