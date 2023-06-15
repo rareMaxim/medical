@@ -8,6 +8,7 @@
   "date",
   "column_break_wjdk",
   "provider",
+  "transfer_by",
   "column_break_ipcu",
   "reciver",
   "section_break_iyjg",
@@ -18,8 +19,6 @@
   "contract_name",
   "contract_number",
   "contract_date",
-  "section_break_tmze",
-  "transfer_by",
   "section_break_fziq",
   "incoming"
  ],
@@ -91,15 +90,13 @@
    "label": "\u0414\u0430\u0442\u0430"
   },
   {
-   "fieldname": "section_break_tmze",
-   "fieldtype": "Section Break"
-  },
-  {
    "description": "\u041c\u0412\u041e - \u041c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u044c\u043d\u043e-\u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0430 \u043e\u0441\u043e\u0431\u0430",
    "fetch_from": "provider.action_user",
+   "fetch_if_empty": 1,
    "fieldname": "transfer_by",
-   "fieldtype": "Data",
-   "label": "\u041c\u0412\u041e / \u041f\u0435\u0440\u0435\u0434\u0430\u0432"
+   "fieldtype": "Link",
+   "label": "\u041c\u0412\u041e / \u041f\u0435\u0440\u0435\u0434\u0430\u0432",
+   "options": "Med Enterprise User"
   },
   {
    "fieldname": "section_break_fziq",
@@ -114,7 +111,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-13 22:13:03.564427",
+ "modified": "2023-06-16 02:18:30.028029",
  "modified_by": "Administrator",
  "module": "Medical",
  "name": "Med Incoming",
