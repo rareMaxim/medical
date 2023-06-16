@@ -13,6 +13,9 @@
   "first_name",
   "column_break_rimp",
   "middle_name",
+  "section_break_nyxz",
+  "enterprise",
+  "column_break_jbxh",
   "section_break_vazy",
   "column_break_pwty",
   "phone",
@@ -130,11 +133,26 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "\u0414\u0430\u0442\u0430 \u043d\u0430\u0440\u043e\u0434\u0436\u0435\u043d\u043d\u044f"
+  },
+  {
+   "fieldname": "section_break_nyxz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "enterprise",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u041f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0441\u0442\u0432\u043e",
+   "options": "Med Enterprise"
+  },
+  {
+   "fieldname": "column_break_jbxh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-15 23:12:18.563664",
+ "modified": "2023-06-17 00:37:28.386231",
  "modified_by": "Administrator",
  "module": "Medical",
  "name": "Med Enterprise User",

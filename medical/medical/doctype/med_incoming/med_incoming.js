@@ -10,3 +10,33 @@ function ReCalcSumAndTotal(frm, cdt, cdn) {
 frappe.ui.form.on("Med Incoming Table", "count", ReCalcSumAndTotal);
 frappe.ui.form.on("Med Incoming Table", "coast", ReCalcSumAndTotal);
 frappe.ui.form.on("Med Incoming Table", "vat", ReCalcSumAndTotal);
+
+frappe.ui.form.on('Med Incoming', {
+    refresh(frm) {
+        frm.set_query('recive_by', function () {
+            return { filters: { 'enterprise': frm.doc.reciver } };
+        });
+    }
+});
+frappe.ui.form.on('Med Incoming', {
+    refresh(frm) {
+        frm.set_query('transfer_by', function () {
+            return { filters: { 'enterprise': frm.doc.provider } };
+        })
+    }
+});
+frappe.ui.form.on('Med Incoming', {
+    provider: function (frm) {
+        frm.set_query('transfer_by', function () {
+            return { filters: { 'enterprise': frm.doc.provider } };
+        });
+    }
+});
+
+frappe.ui.form.on('Med Incoming', {
+    reciver: function (frm) {
+        frm.set_query('recive_by', function () {
+            return { filters: { 'enterprise': frm.doc.reciver } };
+        });
+    }
+});
