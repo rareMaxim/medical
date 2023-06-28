@@ -20,7 +20,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-22 19:39:22.076067",
+ "modified": "2023-06-28 12:15:26.136071",
  "modified_by": "Administrator",
  "module": "Medical",
  "name": "Med Enterprise Type",
@@ -36,6 +36,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u041c\u0435\u0434. \u0410\u0434\u043c\u0456\u043d",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u041c\u0435\u0434. \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447",
    "share": 1,
    "write": 1
   }

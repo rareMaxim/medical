@@ -1,59 +1,120 @@
 {
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>\\u041c\\u0435\\u0434\\u0438\\u043a\\u0430\\u043c\\u0435\\u043d\\u0442\\u0438</p><p>\\u0412\\u0438\\u0442\\u0440\\u0430\\u0442\\u043d\\u0456 \\u043c\\u0430\\u0442\\u0435\\u0440\\u0456\\u0430\\u043b\\u0438</p><p>\\u0406\\u043d\\u0441\\u0442\\u0440\\u0443\\u043c\\u0435\\u043d\\u0442\\u0438</p><p>...\", \"by\": \"Administrator\", \"name\": \"aa4b643171\"}]",
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:title",
+ "autoname": "naming_series:naming_series",
  "creation": "2023-06-13 00:54:32.393026",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "trade_name",
+  "column_break_hyut",
   "title",
+  "column_break_drue",
   "internal_name",
+  "section_break_sfbb",
   "unit",
-  "coast"
+  "column_break_rwjw",
+  "coast",
+  "naming_series",
+  "column_break_cvyj",
+  "status"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
+   "columns": 3,
    "fieldname": "title",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "\u041d\u0430\u0437\u0432\u0430",
-   "reqd": 1,
-   "unique": 1
+   "label": "\u0414\u0456\u044e\u0447\u0430 \u0440\u0435\u0447\u043e\u0432\u0438\u043d\u0430"
   },
   {
    "allow_in_quick_entry": 1,
+   "columns": 1,
    "fieldname": "internal_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "\u041c\u041d\u041d"
   },
   {
    "allow_in_quick_entry": 1,
+   "columns": 1,
    "fieldname": "coast",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "\u0411\u0430\u0437\u043e\u0432\u0430 \u0446\u0456\u043d\u0430"
+   "label": "\u0426\u0456\u043d\u0430"
   },
   {
    "allow_in_quick_entry": 1,
+   "columns": 1,
    "fieldname": "unit",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "\u0424\u043e\u0440\u043c\u0430 \u0432\u0438\u043f\u0443\u0441\u043a\u0443",
+   "label": "\u041e\u0434\u0438\u043d\u0438\u0446\u044f \u0432\u0438\u043c\u0456\u0440\u0443",
    "options": "Med Incoming Unit"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "columns": 1,
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0422\u043e\u0440\u0433\u043e\u0432\u0430 \u043d\u0430\u0437\u0432\u0430"
+  },
+  {
+   "fieldname": "column_break_hyut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_drue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_sfbb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rwjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "naming_series"
+  },
+  {
+   "fieldname": "column_break_cvyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "columns": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0422\u0438\u043f",
+   "options": "\u041c\u0435\u0434\u0438\u043a\u0430\u043c\u0435\u043d\u0442\u0438\n\u0412\u0438\u0442\u0440\u0430\u0442\u043d\u0456 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438\n\u0406\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438\n\u041e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f",
+   "reqd": 1,
+   "sort_options": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-13 21:57:58.113998",
+ "modified": "2023-06-28 18:48:34.641257",
  "modified_by": "Administrator",
  "module": "Medical",
  "name": "Med Incoming Name",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -67,10 +128,58 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u041c\u0435\u0434. \u0410\u0434\u043c\u0456\u043d",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u041c\u0435\u0434. \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
+ "search_fields": "trade_name,internal_name",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Purple",
+   "title": "\u041c\u0435\u0434\u0438\u043a\u0430\u043c\u0435\u043d\u0442\u0438"
+  },
+  {
+   "color": "Light Blue",
+   "title": "\u0412\u0438\u0442\u0440\u0430\u0442\u043d\u0456 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438"
+  },
+  {
+   "color": "Blue",
+   "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438"
+  },
+  {
+   "color": "Pink",
+   "title": "\u041e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f"
+  }
+ ],
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1,
+ "translated_doctype": 1
 }

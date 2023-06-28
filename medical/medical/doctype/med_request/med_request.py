@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class MedConsumablesTable(Document):
+class MedRequest(Document):
 	pass
